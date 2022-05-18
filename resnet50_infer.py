@@ -44,4 +44,5 @@ if __name__ == '__main__':
   main(parser.parse_args())
 
 
-## python3 -m intel_extension_for_pytorch.cpu.launch --ninstance 1 --node_id 0 resnet50.py
+
+## python3 -m intel_extension_for_pytorch.cpu.launch --ninstance 1 --node_id 0 infer.py --intel_extension_for_pytorch
