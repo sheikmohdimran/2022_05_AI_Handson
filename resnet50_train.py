@@ -40,7 +40,7 @@ dls = DataBlock(
     item_tfms=[Resize(192, method='squish')]
 ).dataloaders(path)
 
-learn = vision_learner(dls, resnet18, metrics=error_rate)
+learn = vision_learner(dls, resnet50, metrics=error_rate)
 print("Begin finetune")
 learn.fine_tune(3)
 learn.export('myModel')
