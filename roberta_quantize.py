@@ -105,7 +105,7 @@ def benchmark(model):
   print(f"Throughput: {throughput} samples/sec")
 
 from neural_compressor.utils.pytorch import load
-model = trainer.model
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
 quant_model = load('./saved_model',model)
 
 benchmark(model)
