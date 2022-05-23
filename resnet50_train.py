@@ -1,4 +1,3 @@
-from fastcore.all import *
 from fastdownload import download_url
 from fastai.vision.all import *
 import time
